@@ -31,7 +31,7 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Localiza en la tabla [vehiculo] de la BBDD aquel registro en el que el
-     * campo [MATRICULA] coincida con el String pasado.
+     * campo [MATRICULA] coincida con el String pasado. Felipe Vargas Contreras
      *
      * @param matricula Tipo de dato String con formato [0-9]{4}[a-zA-Z]{3}.
      * @return Devuelve un Vehiculo, un Vehiculo vacío o NULL.
@@ -60,7 +60,7 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Localiza en la tabla [clase] de la BBDD aquel registro en el que el campo
-     * [IDCLASE] coincida con el int pasado.
+     * [IDCLASE] coincida con el int pasado. Felipe Vargas Contreras
      *
      * @param ide Tipo de dato int que cumple la siguiente condición (ide > 0).
      * @return Devuelve una Clase, una Clase vacía o NULL.
@@ -89,7 +89,7 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Localiza en la tabla [practico] de la BBDD aquel registro en el que el
-     * campo [ID_PRACTICO] coincida con el int pasado.
+     * campo [ID_PRACTICO] coincida con el int pasado. Felipe Vargas Contreras
      *
      * @param ide Tipo de dato int que cumple con la siguiente condición (ide >
      * 0).
@@ -119,7 +119,7 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Localiza en la tabla [teorico] de la BBDD aquel registro en el que el
-     * campo [ID_TEORICO] coincida con el int pasado.
+     * campo [ID_TEORICO] coincida con el int pasado. Felipe Vargas Contreras
      *
      * @param ide Tipo de dato int que cumple con la siguiente condición (ide >
      * 0)
@@ -149,7 +149,7 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Localiza en la tabla [trabajador] de la BBDD aquel registro en el que el
-     * campo [DNI] coincida con el String pasado.
+     * campo [DNI] coincida con el String pasado. Felipe Vargas Contreras
      *
      * @param dni Tipo de dato String con formato [0-9]{8}[a-zA-Z]{1}.
      * @return Devuelve un Persona.Trabajador, un Persona.Trabajador vacío o
@@ -189,7 +189,7 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Localiza en la tabla [alumno] de la BBDD aquel registro en el que el
-     * campo [DNI] coincida con el String pasado.
+     * campo [DNI] coincida con el String pasado. Felipe Vargas Contreras
      *
      * @param dni Tipo de dato String con formato [0-9]{8}[a-zA-Z]{1}.
      * @return Devuelve un Persona.Alumno, un Persona.Alumno vacío o NULL.
@@ -267,7 +267,8 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Localiza en la tabla [clase] de la BBDD todos los registros en el que el
-     * campo [DNI_TRABAJADOR] coincida con el String pasado.
+     * campo [DNI_TRABAJADOR] coincida con el String pasado. Hugo Pozuelo
+     * Martínez
      *
      * @param dni Tipo de dato String con formato [0-9]{8}[a-zA-Z]{1}.
      * @return Devuelve un Vector.Clase, un Vector.Clase vacío o NULL.
@@ -296,7 +297,8 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Localiza en la tabla [practico] de la BBDD todos los registros en el que
-     * el campo [DNI_TRABAJADOR] coincida con el String pasado.
+     * el campo [DNI_TRABAJADOR] coincida con el String pasado. Hugo Pozuelo
+     * Martínez
      *
      * @param dni Tipo de dato String con formato [0-9]{8}[a-zA-Z]{1}.
      * @return Devuelve un Vector.Examen.Practico, un Vector.Examen.Practico
@@ -326,6 +328,7 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Inserta en la tabla [alumno] de la BBDD los campos del Alumno pasado.
+     * David Garcia Terrel
      *
      * @param a1 Tipo de dato Alumno.
      * @return Devuelve el total de filas insertadas.
@@ -379,7 +382,7 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Inserta en la tabla [trabajador] de la BBDD los campos del Trabajador
-     * pasado.
+     * pasado. David Garcia Terrel
      *
      * @param a1 Tipo de dato Trabajador.
      * @return Devuelve el total de filas insertadas.
@@ -432,6 +435,7 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Inserta en la tabla [vehiculo] de la BBDD los campos del Vehiculo pasado.
+     * David Garcia Terrel
      *
      * @param v1 Tipo de dato Vehiculo.
      * @return Devuelve el total de filas insertadas.
@@ -453,7 +457,8 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Inserta en la tabla [teorico] de la BBDD los campos del Teorico pasado
-     * junto al String que hace referencia al campo [DNI_ALUMNO].
+     * junto al String que hace referencia al campo [DNI_ALUMNO]. David Garcia
+     * Terrel
      *
      * @param t1 Tipo de dato Teorico.
      * @param dni Tipo de dato String con formato [0-9]{8}[a-zA-Z][1}.
@@ -476,7 +481,8 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Inserta en la tabla [practico] de la BBDD los campos del Practico pasado
-     * junto al String que hace referencia al campo [DNI_ALUMNO].
+     * junto al String que hace referencia al campo [DNI_ALUMNO]. David Garcia
+     * Terrel
      *
      * @param p1 Tipo de dato Practico.
      * @param dni Tipo de dato String con formato [0-9]{8}[a-zA-Z]{1}.
@@ -499,6 +505,7 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Inserta en la tabla [clase] de la BBDD los campos de la Clase pasada.
+     * David Garcia Terrel
      *
      * @param c1 Tipo de dato Clase.
      * @return Devuelve el total de filas insertadas.
@@ -525,7 +532,7 @@ public class BD_Autoescuela extends BD_Conector {
      * String pasado. Elimina de la tabla [practico] de la BBDD todos los
      * registros en el que el campo [DNI_ALUMNO] coincida con el String pasado.
      * Elimina de la tabla [clase] de la BBDD todos los registros en el que el
-     * campo [DNI_ALUMNO] coincida con el String pasado.
+     * campo [DNI_ALUMNO] coincida con el String pasado. Hugo Pozuelo Martinez
      *
      * @param dni Tipo de dato String con formato [0-9]{8}[a-zA-Z]{1}.
      * @return Devuelve el total de filas eliminadas.
@@ -572,7 +579,7 @@ public class BD_Autoescuela extends BD_Conector {
      * [practico] de la BBDD todos los registros en el que el campo
      * [DNI_TRABAJADOR] coincida con el String pasado. Reemplaza por NULL en la
      * tabla [clase] de la BBDD todos los registros en el que el campo
-     * [DNI_TRABAJADOR] coincida con el String pasado.
+     * [DNI_TRABAJADOR] coincida con el String pasado. Hugo Pozuelo Martinez
      *
      * @param dni Tipo de dato String con formato [0-9]{8}[a-zA-Z]{1}.
      * @return Devuelve el total de filas eliminadas.
@@ -618,7 +625,7 @@ public class BD_Autoescuela extends BD_Conector {
      * tabla [practico] de la BBDD todos los registros en el que el campo
      * [MATRICULA] coincida con el String pasado. Reemplaza por NULL en la tabla
      * [clase] de la BBDD todos los registros en el que el campo [MATRICULA]
-     * coincida con el String pasado.
+     * coincida con el String pasado. Hugo Pozuelo Martinez
      *
      * @param matricula Tipo de dato String con formato [0-9]{4}[a-zA-Z]{3}.
      * @return Devuelve el total de filas eliminadas.
@@ -660,7 +667,7 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Elimina de la tabla [clase] de la BBDD aquel registro en el que el campo
-     * [IDCLASE] coincida con el int pasado.
+     * [IDCLASE] coincida con el int pasado. Hugo Pozuelo Martinez
      *
      * @param id_clase Tipo de dato int que cumple con la siguiente condición
      * (id_clase > 0).
@@ -689,7 +696,7 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Elimina de la tabla [practico] de la BBDD aquel registro en el que el
-     * campo [ID_PRACTICO] coincida con el int pasado.
+     * campo [ID_PRACTICO] coincida con el int pasado. Hugo Pozuelo Martinez
      *
      * @param idExamen Tipo de dato int que cumple con la siguiente condición
      * (idExamen > 0).
@@ -718,7 +725,7 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Elimina de la tabla [teorico] de la BBDD aquel registro en el que el
-     * campo [ID_TEORICO] coincida con el int pasado.
+     * campo [ID_TEORICO] coincida con el int pasado. Hugo Pozuelo Martinez
      *
      * @param idExamen Tipo de dato int que cumple con la siguiente condición
      * (idExamen > 0).
@@ -748,7 +755,7 @@ public class BD_Autoescuela extends BD_Conector {
     /**
      * Elimina de la tabla [clase] de la BBDD todos los registros en el que el
      * campo [IDCLASE] coincida con el int pasado además de que el campo
-     * [DNI_TRABAJADOR] coincida con el String pasado.
+     * [DNI_TRABAJADOR] coincida con el String pasado. Hugo Pozuelo Martinez
      *
      * @param id_clase Tipo de dato int que cumple con la siguiente condición
      * (id_clase > 0).
@@ -779,7 +786,7 @@ public class BD_Autoescuela extends BD_Conector {
     /**
      * Elimina de la tabla [practico] de la BBDD todos los registros en el que
      * el campo [ID_PRACTICO] coincida con el int pasado además de que el campo
-     * [DNI_TRABAJADOR] coincida con el String pasado.
+     * [DNI_TRABAJADOR] coincida con el String pasado. Hugo Pozuelo Martinez
      *
      * @param idExamen Tipo de dato int que cumple con la siguiente condición
      * (id_clase > 0).
@@ -811,7 +818,7 @@ public class BD_Autoescuela extends BD_Conector {
      * Método de autenticación para poder realizar operaciones sobre la BBDD.
      * Localiza en la tabla [trabajador] de la BBDD aquel registro en el que el
      * campo [DNI] coincida con el primer String pasado además de que el campo
-     * [CONTRASEÑA] coincida con el segundo String pasado.
+     * [CONTRASEÑA] coincida con el segundo String pasado. Hugo Pozuelo Martinez
      *
      * @param dni Tipo de dato String con formato [0-9]{8}[a-zA-Z]{1}.
      * @param clave Tipo de dato String que cumple con la siguiente condición
@@ -854,7 +861,7 @@ public class BD_Autoescuela extends BD_Conector {
 
     /**
      * Cuenta en la tabla [clase] de la BBDD todos los registros en el que el
-     * campo [DNI_ALUMNO] coincida con el String pasado.
+     * campo [DNI_ALUMNO] coincida con el String pasado. Felipe Vargas Contreras
      *
      * @param dni Tipo de dato String con formato [0-9]{8}[a-zA-Z]{1}.
      * @return Devuelve si el total de clases realizadas supera o iguala 4.
